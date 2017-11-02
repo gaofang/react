@@ -69,7 +69,7 @@ class Tcs extends React.Component {
       temp.splice(temp.length - 1, 1);
       if (temp.some(item => item.x === snake[snake.length - 1].x && item.y === snake[snake.length - 1].y)) {
         clearInterval(this.interval);
-        this.refs.audio.src = '../../../assets/failed.mp3';
+        this.refs.audio.src = 'failed.mp3';
         this.refs.audio.loop = false;
         this.refs.audio.play();
         this.setState({status: 3});
@@ -122,7 +122,7 @@ class Tcs extends React.Component {
     this.snake = [];
     this.snake.push(this.random('#FFCC00'));
     this.run(this.preduce(), this.snake);
-    this.refs.audio.src = '../../../assets/bgm.mp3';
+    this.refs.audio.src = 'bgm.mp3';
     this.refs.audio.loop = true;
     this.refs.audio.play();
   };
@@ -170,9 +170,9 @@ class Tcs extends React.Component {
               onClick={this.handlePause}
             />
           </div>
-          <audio ref="audio" src="../../../assets/bgm.mp3" loop>
+          <audio ref="audio" src="bgm.mp3" loop>
           </audio>
-          <audio ref="eatAppleAudio" src="../../../assets/1795.wav" loop>
+          <audio ref="eatAppleAudio" src="1795.wav" loop>
           </audio>
           <div className={styles.failBox} style={{display: this.state.status === 0 ? 'block' : 'none'}}>
             <div className={styles.panel}>
