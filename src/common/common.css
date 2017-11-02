@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+body {
+    min-width: 320px;
+    font-family: "SC";
+    font-weight: lighter;
+    font-size: 24px;
+    height: 100%;
+}
+html, body {
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+@font-face {
+    font-family: "SC";
+    font-style:normal;
+    font-weight: 300;
+    src: url("./HanHei-SC-thin.woff") format("woff");
+}
+

@@ -1,0 +1,81 @@
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: #25344a;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    height: 10.5rem;
+    width: 7.5rem;
+    /*margin: 0 auto;*/
+    /*border: 1px solid #31ae96;*/
+    position: relative;
+    background-color: #3C4855;
+    /*box-shadow: 0 1px 100px #333;*/
+}
+.cube {
+    position: absolute;
+    z-index: 99;
+    border-radius: 6px;
+    border: 1px solid #3C4855;
+}
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .96rem;
+    font-weight: 600;
+    color: #fff;
+    flex-grow: 1;
+}
+.btn img {
+    width: .96rem;
+}
+.failBox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 999;
+}
+.failBox .panel {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+.failBox p {
+    text-align: center;
+    font-size: .96rem;
+    color: #fff;
+    font-weight: 800;
+}
+.panel div {
+    margin: .3rem 1.5rem;
+    width: 4.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.panel span {
+    font-size: .72rem;
+    color: #fff;
+    font-weight: 600;
+}
+.failBox button {
+    margin: .3rem 1.5rem;
+    height: .96rem;
+    width: 4.5rem;
+    border-radius: .48rem;
+    font-size: .48rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: limegreen;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}

@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #656565;
+}
+.box {
+    width: 80%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.box span {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .3rem;
+    background-color: #31ae96;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 25px;
+}
+.ipt {
+    width: 8rem;
+    max-width: 80%;
+    display: block;
+    margin: 50px auto;
+    height: 50px;
+    border-radius: 25px;
+    -webkit-appearance: none;
+    outline: none;
+    font-size: 36px;
+    color: #666;
+    padding: 0 25px;
+    border: none;
+    text-align: center;
+}

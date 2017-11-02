@@ -1,0 +1,99 @@
+.wrap{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.dotWrap{
+    position: absolute;
+    bottom: 7.5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 3px;
+    border:1px solid #ffffff;
+    opacity: 1;
+}
+.nowDot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.arrowsWrap{
+    position: absolute;
+    top: 45%;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+}
+.arrowsWrap span:nth-child(1){
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-top: .08rem solid #fff;
+    border-left: .08rem solid #fff;
+    float: left;
+    margin-left: .5rem;
+    transform: rotatez(-45deg);
+}
+.arrowsWrap span:nth-child(2){
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-top: .08rem solid #fff;
+    border-right: .08rem solid #fff;
+    float: right;
+    margin-right: .5rem;
+    transform: rotatez(45deg);
+}
+.arrowsWrap span:hover{
+    border-color: springgreen;
+}
+.img-box{
+    width: 300%;
+    margin-left: -100%;
+    animation: move 500ms ease;
+    -webkit-animation: move 500ms ease;
+    overflow: hidden;
+}
+.img-box1{
+    width: 300%;
+    margin-left: -100%;
+    overflow: hidden;
+}
+.img-box-l{
+    width: 300%;
+    margin-left: -100%;
+    animation: moveL 500ms ease;
+    -webkit-animation:  moveL 500ms ease;
+    overflow: hidden;
+}
+.img-box1-l{
+    width: 300%;
+    margin-left: -100%;
+    overflow: hidden;
+}
+@keyframes move {
+    from{margin-left: 0}
+    to{margin-left: -100%}
+}
+@-webkit-keyframes move {
+    from{margin-left: 0}
+    to{margin-left: -100%}
+}
+@keyframes moveL {
+    from{margin-left: -200%}
+    to{margin-left: -100%}
+}
+@-webkit-keyframes moveL {
+    from{margin-left: -200%}
+    to{margin-left: -100%}
+}
