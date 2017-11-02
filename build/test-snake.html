@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html manifest="index.manifest">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>React Gluttonous Snake</title>
+    <meta name="keywords" content="react,reactjs，贪吃蛇,React Gluttonous Snake, postcss, js, 小游戏,css">
+    <meta name="description" content="reactjs贪吃蛇小游戏">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="flexibility.js"></script>
+</head>
+<body ontouchstart="">
+<div id="approot" style="height: 100%"></div>
+<script>
+  var html = document.documentElement;
+  var width = html.clientWidth;
+  html.style.fontSize = width / 7.5 + 'px';
+  window.addEventListener('load', function (e) {
+    window.applicationCache.addEventListener('updateready', function (e) {
+      if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+        // Browser downloaded a new app cache.
+        // Swap it in and reload the page to get the new hotness.
+        window.applicationCache.swapCache();
+        window.location.reload();
+      } else {
+        // Manifest didn’t changed. Nothing new to server.
+      }
+    }, false);
+  }, false);
+</script>
+<script type="text/javascript" src="test.7083d731.js"></script>
+</body>
+</html>
