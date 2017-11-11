@@ -1,256 +1,225 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <style>
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote {
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
 
-        body {
-            font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-            font-size: 13px;
-            line-height: 18px;
-            color: #737373;
-            background-color: white;
-            margin: 10px 13px 10px 13px;
-        }
-
-        table {
-            margin: 10px 0 15px 0;
-            border-collapse: collapse;
-        }
-
-        td, th {
-            border: 1px solid #ddd;
-            padding: 3px 10px;
-        }
-
-        th {
-            padding: 5px 10px;
-        }
-
-        a {
-            color: #0069d6;
-        }
-
-        a:hover {
-            color: #0050a3;
-            text-decoration: none;
-        }
-
-        a img {
-            border: none;
-        }
-
-        p {
-            margin-bottom: 9px;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: #404040;
-            line-height: 36px;
-        }
-
-        h1 {
-            margin-bottom: 18px;
-            font-size: 30px;
-        }
-
-        h2 {
-            font-size: 24px;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
-
-        h4 {
-            font-size: 16px;
-        }
-
-        h5 {
-            font-size: 14px;
-        }
-
-        h6 {
-            font-size: 13px;
-        }
-
-        hr {
-            margin: 0 0 19px;
-            border: 0;
-            border-bottom: 1px solid #ccc;
-        }
-
-        blockquote {
-            padding: 13px 13px 21px 15px;
-            margin-bottom: 18px;
-            font-family: georgia, serif;
-            font-style: italic;
-        }
-
-        blockquote:before {
-            content: "\201C";
-            font-size: 40px;
-            margin-left: -10px;
-            font-family: georgia, serif;
-            color: #eee;
-        }
-
-        blockquote p {
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 18px;
-            margin-bottom: 0;
-            font-style: italic;
-        }
-
-        code, pre {
-            font-family: Monaco, Andale Mono, Courier New, monospace;
-        }
-
-        code {
-            background-color: #fee9cc;
-            color: rgba(0, 0, 0, 0.75);
-            padding: 1px 3px;
-            font-size: 12px;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
-        }
-
-        pre {
-            display: block;
-            padding: 14px;
-            margin: 0 0 18px;
-            line-height: 16px;
-            font-size: 11px;
-            border: 1px solid #d9d9d9;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-
-        pre code {
-            background-color: #fff;
-            color: #737373;
-            font-size: 11px;
-            padding: 0;
-        }
-
-        sup {
-            font-size: 0.83em;
-            vertical-align: super;
-            line-height: 0;
-        }
-
-        * {
-            -webkit-print-color-adjust: exact;
-        }
-
-        @media screen and (min-width: 914px) {
-            body {
-                width: 854px;
-                margin: 10px auto;
-            }
-        }
-
-        @media print {
-            body, code, pre code, h1, h2, h3, h4, h5, h6 {
-                color: black;
-            }
-
-            table, pre {
-                page-break-inside: avoid;
-            }
-        }
-    </style>
-    <title>个人概要</title>
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>个人概要</title>
 
 </head>
 <body>
-<p><img src="./PersonalPhoto.jpg" width="64" height="64" alt="头像" align=right style="margin-right:100"/></p>
+<p><img src="./PersonalPhoto.jpg" width = "64" height = "64" alt="头像" align=right style="margin-right:100" /></p>
 
 <h4>个人概要</h4>
 
 <p>郑高方&emsp;男&emsp;现居北京&emsp;武汉大学&emsp;本科&emsp;软件工程专业&emsp;2016年毕业</p>
 
-<p>手机:17010284096&emsp;邮箱:<a
-        href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=BWNka2IraGRsaUVjan1oZGxpK2ZqaA">fang.mail@foxmail.com</a>
-</p>
+<p>手机:17010284096&emsp;邮箱:<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=BWNka2IraGRsaUVjan1oZGxpK2ZqaA">fang.mail@foxmail.com</a></p>
 
 <h4>工作经历</h4>
 
 <p>天方创新(北京)信息技术有限公司－互联网开发部－<code>前端研发工程师(2016.10至今)</code></p>
 
 <ul>
-    <li><p>索真健康服务号微信端(gene.thorgene.com/products-store)，管理端</p>
+<li><p>索真健康服务号微信端(gene.thorgene.com/products-store)，管理端</p>
 
-        <ul>
-            <li>参与项目的技术选型(reactJs、aterial-ui、git)</li>
-            <li>负责项目搭建(webpack、gulp、目录结构)和模块划分</li>
-            <li>负责前端需求评审、拆分，团队任务分工、进度管理及前端代码review</li>
-            <li>参与多个模块和页面的开发迭代工作</li>
-            <li>组件化，公共组件、库的封装和优化，提高了团队开发效率</li>
-        </ul>
-    </li>
-    <li><p>天方创新官网(vlifebank.com)、索真官网(thorgene.com)重构，中英论坛官网(culsms.thorgene.com)项目开发</p>
+<ul>
+<li>参与项目的技术选型(reactJs、material-ui、git)</li>
+<li>负责项目搭建(webpack、gulp、目录结构)和模块划分</li>
+<li>负责前端需求评审、拆分，团队任务分工、进度管理及前端代码review</li>
+<li>参与多个模块和页面的开发迭代工作</li>
+<li>组件化，公共组件、库的封装和优化，提高了团队开发效率</li>
+</ul>
+</li>
+<li><p>天方创新官网(vlifebank.com)、索真官网(thorgene.com)重构，中英论坛官网(culsms.thorgene.com)项目开发</p>
 
-        <ul>
-            <li>负责需求对接，项目搭建，结构设计和团队分工</li>
-            <li>参与多个页面的开发及迭代</li>
-            <li>参与页面的交互设计和动画实现</li>
-            <li>主导页面的移动适配和浏览器兼容</li>
-        </ul>
-    </li>
-    <li><p>索真健康后端PDF自动化模块</p>
+<ul>
+<li>负责需求对接，项目搭建，结构设计和团队分工</li>
+<li>参与多个页面的开发及迭代</li>
+<li>参与页面的交互设计和动画实现</li>
+<li>主导页面的移动适配和浏览器兼容</li>
+</ul>
+</li>
+<li><p>索真健康后端PDF自动化模块</p>
 
-        <ul>
-            <li>PDFMAKE，NODE-CANVAS等相关库研究及环境搭建</li>
-            <li>样式模板开发</li>
-            <li>动态数据的接入实现PDF报告的自动化生成</li>
-        </ul>
-    </li>
-    <li>主导搭建天方创新官网CMS系统。前端React，后端Node.js</li>
+<ul>
+<li>PDFMAKE，NODE-CANVAS等相关库研究及环境搭建</li>
+<li>样式模板开发</li>
+<li>动态数据的接入实现PDF报告的自动化生成</li>
+</ul>
+</li>
+<li>主导搭建天方创新官网CMS系统。前端React，后端Node.js</li>
 </ul>
 
 
 <p>武汉百纳信息有限公司－海豚浏览器产品部－<code>前端开发工程师(intern)</code></p>
 
 <ul>
-    <li>宇航节h5运营页面制作，包括动画和交互效果的实现</li>
-    <li>theme store和web应用模块新控制台的前端页面实现和联调</li>
-    <li>根据ui图实现海豚浏览器新版本home design的首页游戏模块game center页面</li>
+<li>宇航节h5运营页面制作，包括动画和交互效果的实现</li>
+<li>theme store和web应用模块新控制台的前端页面实现和联调</li>
+<li>根据ui图实现海豚浏览器新版本home design的首页游戏模块game center页面</li>
 </ul>
 
 
 <h4>个人能力</h4>
 
-<p>
-    <code>HTML</code>&emsp;<code>CSS</code>&emsp;<code>JS</code>&emsp;<code>React</code>&emsp;<code>Node.js</code>&emsp;<code>vue.js</code>&emsp;<code>微信小程序</code>
-</p>
+<p><code>HTML</code>&emsp;<code>CSS</code>&emsp;<code>JS</code>&emsp;<code>React</code>&emsp;<code>Node.js</code>&emsp;<code>vue.js</code>&emsp;<code>微信小程序</code></p>
 
 <ul>
-    <li>熟悉HTML、CSS、W3C标准、常见协议、浏览器兼容性、熟练掌握HTML5、CSS3，能精准还原页面设计样式</li>
-    <li>熟悉JS、ES6，熟练掌握React.js，有组件化、模块化开发经验，能独立开发常用组件</li>
-    <li>熟悉webpack、gulp等工作流、打包工具，有相关项目经验</li>
-    <li>了解Node.js，有后端项目开发经验</li>
-    <li>了解Vue.js、微信小程序，关注前端新技术</li>
-    <li>学习能力强，独立解决问题能力强，有英文文档阅读能力</li>
+<li>熟悉HTML、CSS、W3C标准、常见协议、浏览器兼容性、熟练掌握HTML5、CSS3，能精准还原页面设计样式</li>
+<li>熟悉JS、ES6，熟练掌握React.js，有组件化、模块化开发经验，能独立开发常用组件</li>
+<li>熟悉webpack、gulp等工作流、打包工具，有相关项目经验</li>
+<li>了解Node.js，有后端项目开发经验</li>
+<li>了解Vue.js、微信小程序，关注前端新技术</li>
+<li>学习能力强，独立解决问题能力强，有英文文档阅读能力</li>
 </ul>
 
 </body>
